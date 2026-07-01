@@ -1,0 +1,135 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 20px;
+        }
+
+        .container {
+            width: 55%;
+            height: 100%;
+            background: #fff;
+            padding: 20px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 720px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        select:focus {
+            border-color: #2575fc;
+            box-shadow: 0 0 8px rgba(37, 117, 252, .3);
+        }
+
+        .gender,
+        .courses {
+            margin-top: 8px;
+        }
+
+        .gender label,
+        .courses label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 20px;
+        }
+
+        .courses div {
+            margin-bottom: 8px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        button:hover {
+            background: #0d5be1;
+        }
+
+        span {
+            color: red;
+            font-size: 13px;
+        }
+
+        @media(max-width:500px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        .full{
+            display: flex;
+            height: 930px;
+            width: 1200px;
+            overflow: hidden;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+        img{
+            height: 930px;
+            border: none;
+            width: auto;
+        }
+        .image-section{
+            width: 45%;
+            position: relative;
+        }
+
+        .image-text{
+            position: absolute;
+            top: 30%;
+            left: 45%;
+        }
+        .image-text h1{
+            font-weight: bolder;
+            font-size: 30px;
+            color: white;
+
+        }

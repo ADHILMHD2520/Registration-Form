@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <div class="full">
+
+        <div class="container">
+
+            <h1>Registration Form</h1>
+
+            <form onsubmit="return validateForm()">
+
+                <label for="fname">Full Name</label>
+                <input id="fname" type="text">
+                <span id="nameErr"></span>
+
+                <label for="email">Email Address</label>
+                <input id="email" type="email">
+                <span id="emailErr"></span>
+
+                <label for="Phone">Phone Number</label>
+                <input type="text" id="Phone">
+                <span id="PhoneError"></span>
+
+                <label>Gender</label>
+
+                <div class="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+                <span id="genderErr"></span>
+
+
+                <label>Courses Registered</label>
+
+                <div class="courses">
+                    <div>
+                        <input type="checkbox" id="Mern">
+                        <label for="Mern">MERN</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Django">
+                        <label for="Django">Django</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ml">
+                        <label for="ml">Machine Learning</label>
+                    </div>
+                    <span id="courseErr"></span>
+                </div>
+
+                <label for="duration">Course Duration</label>
+
+                <select id="duration">
+                    <option>--- Select Duration ---</option>
+                    <option id="m6">6 Months</option>
+                    <option id="m3">3 Months</option>
+                    <option id="m12">1 Year</option>
+                </select>
+                <span id="durationErr"></span>
+
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd">
+                <span id="pwdErr"></span>
+
+
+                <label for="conf-pwd">Confirm Password</label>
+                <input type="password" id="conf-pwd">
+                <span id="pwdErrl"></span>
+
+
+                <button type="submit">Register</button>
+
+            </form>
+
+        </div>
+        <div class="image-section">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200" alt="Nature">
+            <div class="image-text">
+                <h1 id="wel">
+                    Get Started
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js">
+    </script>
+
+</body>
+
+</html>
