@@ -79,7 +79,7 @@ function validateForm() {
 
 
   if (isValid) {
-    // alert("Form submitted successfully!");
+    alert("Form submitted successfully!");
     document.getElementById("wel").innerHTML="Welcome"
 
 
